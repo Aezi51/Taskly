@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.getElementById('process-btn').addEventListener('click',async()=>{const f=document.getElementById('file-input').files[0];if(!f){alert("Please select an audio file.");return}const o=`normalized.${f.name.split('.').pop()}`;await runFFmpeg(f,['-i',`input.${f.name.split('.').pop()}`,'-af','loudnorm',o],o)})});

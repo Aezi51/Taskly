@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.getElementById('process-btn').addEventListener('click',async()=>{const f=Array.from(document.getElementById('file-input').files);if(f.length<2){alert('Select at least 2 audio files.');return}const o=`merged.${f[0].name.split('.').pop()}`;await runFFmpeg(f,['-f','concat','-safe','0','-i','list.txt','-c','copy',o],o)})});

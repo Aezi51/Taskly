@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.getElementById('process-btn').addEventListener('click',async()=>{const f=document.getElementById('file-input').files[0];if(!f){alert("Please select a video file.");return}const o=`noaudio.${f.name.split('.').pop()}`;await runFFmpeg(f,['-i',`input.${f.name.split('.').pop()}`,'-c','copy','-an',o],o)})});

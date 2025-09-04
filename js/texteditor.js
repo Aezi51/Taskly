@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{document.getElementById('download-btn').addEventListener('click',()=>{const t=document.getElementById('text-input').value,b=new Blob([t],{type:'text/plain'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='document.txt';a.click()})});

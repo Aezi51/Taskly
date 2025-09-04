@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Taskly — Crop & Rotate Image</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800;900&display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script src="https://unpkg.com/lucide@latest"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.css" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.1/cropper.min.js"></script><link rel="stylesheet" href="../../css/main.css"></head><body class="antialiased"><div id="header-placeholder"></div><main><section class="relative py-32 md:py-40 px-6 text-center overflow-hidden"><div class="absolute inset-0 bg-grid-pattern opacity-10"></div><div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#111814]"></div><div class="relative z-10 max-w-4xl mx-auto"><h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">Crop & Rotate Image</h1><p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">Visually crop, rotate, and adjust your images with an interactive editor.</p></div></section><section class="pb-24 px-6"><div class="max-w-7xl mx-auto"><div class="tool-container">
+            <div class="flex flex-col gap-6">
+                <div id="drop-zone" class="drop-zone flex flex-col items-center justify-center text-center">...</div>
+                <div id="cropper-preview" class="hidden w-full bg-[#0c100e] rounded-lg p-4 border border-slate-800"><img id="image-to-crop"></div>
+            </div>
+            <div id="tool-options" class="options-panel hidden">
+                <h3 class="text-2xl font-bold text-white mb-6 border-b border-slate-700 pb-4">Controls</h3>
+                <div class="space-y-4">
+                    <div><label>Aspect Ratio</label><div class="grid grid-cols-4 gap-2 mt-2">
+                        <button id="aspect-16-9" class="p-2 bg-slate-700 rounded-md text-sm">16:9</button>
+                        <button id="aspect-4-3" class="p-2 bg-slate-700 rounded-md text-sm">4:3</button>
+                        <button id="aspect-1-1" class="p-2 bg-slate-700 rounded-md text-sm">1:1</button>
+                        <button id="aspect-free" class="p-2 bg-slate-700 rounded-md text-sm">Free</button>
+                    </div></div>
+                    <div><label>Rotation</label><div class="grid grid-cols-2 gap-2 mt-2">
+                        <button id="rotate-left" class="p-2 bg-slate-700 rounded-md flex items-center justify-center gap-2"><i data-lucide="rotate-ccw"></i>-90°</button>
+                        <button id="rotate-right" class="p-2 bg-slate-700 rounded-md flex items-center justify-center gap-2"><i data-lucide="rotate-cw"></i>+90°</button>
+                    </div></div>
+                </div>
+                <div id="process-btn-wrapper" class="mt-8 pt-6 border-t border-slate-700">...</div>
+                <div id="reset-btn-wrapper" class="hidden mt-8 pt-6 border-t border-slate-700">...</div>
+                <div id="status" class="status-box mt-4">Ready</div>
+                <a href="#" id="download-link" class="hidden mt-4 ..."></a><div id="download-links" class="mt-4"></div>
+            </div>
+        </div></div></section></main><div id="footer-placeholder"></div><script src="../../js/load-components.js" defer></script><script src="../../js/main.js" defer></script><script src="../../js/croprotate.js" defer></script></body></html>
