@@ -1,23 +1,66 @@
-<!-- Support Options -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
-  <a href="https://github.com/sponsors/accounts"
-     target="_blank"
-     class="flex flex-col items-center justify-center gap-3 p-6 bg-[#1a221d] border border-slate-800 rounded-2xl font-semibold text-white hover:bg-slate-800 transition transform hover:-translate-y-1 hover:shadow-lg">
-    <i data-lucide="github" class="w-8 h-8 text-emerald-400"></i>
-    <span>GitHub Sponsors</span>
-  </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taskly — Support & Sponsors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body class="antialiased">
+  <div id="header-placeholder"></div>
 
-  <a href="https://www.paypal.com/paypalme/ankitsunar8889"
-     target="_blank"
-     class="flex flex-col items-center justify-center gap-3 p-6 bg-[#1a221d] border border-slate-800 rounded-2xl font-semibold text-white hover:bg-slate-800 transition transform hover:-translate-y-1 hover:shadow-lg">
-    <i data-lucide="paypal" class="w-8 h-8 text-emerald-400"></i>
-    <span>PayPal</span>
-  </a>
+  <main>
+    <section class="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden pt-20 bg-[#111814]">
+      <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#111814]"></div>
 
-  <a href="https://www.buymeacoffee.com/ankitsunar8889"
-     target="_blank"
-     class="flex flex-col items-center justify-center gap-3 p-6 bg-[#1a221d] border border-slate-800 rounded-2xl font-semibold text-white hover:bg-slate-800 transition transform hover:-translate-y-1 hover:shadow-lg">
-    <i data-lucide="coffee" class="w-8 h-8 text-emerald-400"></i>
-    <span>Buy Me a Coffee</span>
-  </a>
-</div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 scroll-fade-in">
+        <h1 class="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
+          Support <span class="text-emerald-400">Taskly</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12">
+          Your support keeps Taskly running, helps us improve, and allows us to add new tools for the community.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-10">
+          <a href="https://github.com/Aezi51/Taskly" target="_blank"
+             class="group relative flex flex-col items-center justify-center p-8 bg-[#1A221D] border border-slate-800 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300 overflow-hidden">
+            <div class="mb-4 inline-block bg-emerald-900/50 p-5 rounded-full">
+              <i data-lucide="github" class="w-12 h-12 text-emerald-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">GitHub Sponsors</h3>
+            <p class="text-slate-400 text-sm">Support the project directly on GitHub and help Taskly grow.</p>
+          </a>
+
+          <a href="https://www.paypal.com/paypalme/ankitsunar8889" target="_blank"
+             class="group relative flex flex-col items-center justify-center p-8 bg-[#1A221D] border border-slate-800 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300 overflow-hidden">
+            <div class="mb-4 inline-block bg-blue-900/50 p-5 rounded-full">
+              <i data-lucide="paypal" class="w-12 h-12 text-emerald-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">PayPal</h3>
+            <p class="text-slate-400 text-sm">Make a one-time donation via PayPal to support Taskly.</p>
+          </a>
+
+          <a href="https://buymeacoffee.com/b2dankit" target="_blank"
+             class="group relative flex flex-col items-center justify-center p-8 bg-[#1A221D] border border-slate-800 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300 overflow-hidden">
+            <div class="mb-4 inline-block bg-yellow-900/50 p-5 rounded-full">
+              <i data-lucide="coffee" class="w-12 h-12 text-emerald-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Buy Me a Coffee</h3>
+            <p class="text-slate-400 text-sm">Support Taskly with a small donation to keep it running and improving.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="./js/load-components.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
