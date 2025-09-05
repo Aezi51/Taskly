@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Taskly — Let's Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body class="antialiased">
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="relative py-32 md:py-40 px-6 text-center overflow-hidden">
+      <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#111814]"></div>
+      <div class="relative z-10 max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-black text-white leading-tight mb-4">Let's Connect</h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto">Whether you have a feature request, a question, or just want to share your feedback, we're always here to listen.</p>
+      </div>
+    </section>
+
+    <section class="pb-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-start">
+          <div class="text-left">
+            <p class="text-lg text-slate-400">Taskly is built for the community, by the community. Your feedback is what makes it better. We read every message.</p>
+            <div class="mt-8 space-y-4">
+              <a href="mailto:ankitsunar266@gmail.com" class="flex items-center gap-3 text-xl font-semibold text-slate-300 hover:text-emerald-400 transition-colors"><i data-lucide="mail" class="w-7 h-7 text-emerald-400"></i>ankitsunar266@gmail.com</a>
+              <a href="#" class="flex items-center gap-3 text-xl font-semibold text-slate-300 hover:text-emerald-400 transition-colors"><i data-lucide="github" class="w-7 h-7 text-emerald-400"></i>GitHub Project</a>
+            </div>
+          </div>
+
+          <div class="options-panel">
+            <form action="#" method="POST" class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-slate-300">Your Name</label>
+                <input type="text" id="name" class="mt-2 block w-full"/>
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold text-slate-300">Your Email</label>
+                <input type="email" id="email" class="mt-2 block w-full"/>
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-semibold text-slate-300">Message</label>
+                <textarea id="message" rows="4" class="mt-2 block w-full"></textarea>
+              </div>
+              <p class="text-xs text-slate-500">Note: This is a demo form. To make it functional, you would need to connect it to a backend service like Netlify Forms or Formspree.</p>
+              <button type="submit" class="primary-btn w-full bg-emerald-400 text-black font-bold py-3 rounded-full">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="./js/load-components.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</body>
+</html>

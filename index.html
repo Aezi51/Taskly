@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taskly — The Ultimate In-Browser Media Toolkit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./css/main.css"/>
+</head>
+<body class="antialiased">
+  <div id="header-placeholder"></div>
+  <main>
+    <section class="relative min-h-screen flex items-center justify-center text-center overflow-hidden pt-20">
+      <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#111814]"></div>
+      <div class="relative z-10 max-w-4xl mx-auto px-6 scroll-fade-in">
+        <h1 class="text-5xl md:text-8xl font-black text-white leading-tight mb-6">Your Media Workflow, <span class="text-emerald-400">Reimagined</span>.</h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10">Taskly offers a suite of powerful, fast, and private media tools that run entirely in your browser. No uploads, no waiting, no privacy concerns. Your files never leave your device.</p>
+        <a href="./tools.html" class="primary-btn inline-block bg-emerald-400 text-black font-bold text-xl px-12 py-5 rounded-full hover:-translate-y-1 transition-all duration-300">Explore All Tools</a>
+      </div>
+    </section>
+
+    <section id="features" class="py-20 md:py-32 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Why Taskly is Different</h2>
+          <p class="text-lg text-slate-400">We built Taskly on three core principles to provide a tool that respects you and your data.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="bg-[#1A221D] p-8 rounded-2xl border border-slate-800 scroll-fade-in">
+            <div class="mb-4 inline-block bg-emerald-900/50 p-4 rounded-full">
+              <i data-lucide="shield-check" class="w-10 h-10 text-emerald-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Absolute Privacy</h3>
+            <p class="text-slate-400">All processing happens on your computer. Your files are never uploaded to a server, ensuring your data remains 100% private and secure.</p>
+          </div>
+
+          <div class="bg-[#1A221D] p-8 rounded-2xl border border-slate-800 scroll-fade-in" style="transition-delay: 200ms;">
+            <div class="mb-4 inline-block bg-emerald-900/50 p-4 rounded-full">
+              <i data-lucide="zap" class="w-10 h-10 text-emerald-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Blazing Speed</h3>
+            <p class="text-slate-400">By leveraging your browser's power with WebAssembly, tasks like video conversion and image editing are completed in seconds, not minutes.</p>
+          </div>
+
+          <div class="bg-[#1A221D] p-8 rounded-2xl border border-slate-800 scroll-fade-in" style="transition-delay: 400ms;">
+            <div class="mb-4 inline-block bg-emerald-900/50 p-4 rounded-full">
+              <i data-lucide="piggy-bank" class="w-10 h-10 text-emerald-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Completely Free</h3>
+            <p class="text-slate-400">Taskly is a passion project. It's free to use, with no ads, no sign-ups, and no premium tiers. Just powerful tools, available to everyone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="py-32 px-6 text-center bg-[#1A221D]">
+      <div class="relative z-10 max-w-4xl mx-auto px-6 scroll-fade-in">
+        <h2 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6">Ready to Reclaim Your Workflow?</h2>
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10">Taskly is free, respects your privacy, and is ready when you are. Launch the app and experience the difference.</p>
+        <a href="./tools.html" class="primary-btn inline-block bg-emerald-400 text-black font-bold text-2xl px-16 py-6 rounded-full hover:-translate-y-2 transition-all duration-300">Launch Taskly App Now</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="./js/load-components.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</body>
+</html>
