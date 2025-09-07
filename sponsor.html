@@ -1,66 +1,157 @@
-<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Taskly — Support & Sponsors</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link rel="stylesheet" href="./css/main.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Support Taskhub | Help Us Grow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <style>
+        .tier-button { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 1rem; background-color: #1A221D; border-radius: 1rem; border-width: 2px; border-color: #334155; text-align: center; transition: all 0.2s ease-in-out; cursor: pointer; }
+        .tier-button:hover { border-color: #10B981; transform: translateY(-4px); }
+        .tier-button .icon { color: #a3a3a3; width: 28px; height: 28px; transition: color 0.2s; }
+        .tier-button:hover .icon { color: #10B981; }
+        .tier-button.selected { background-color: #10B981; color: white; border-color: #10B981; }
+        .tier-button.selected .icon { color: white; }
+    </style>
 </head>
-<body class="antialiased">
-  <div id="header-placeholder"></div>
+<body class="antialiased bg-[#111814] text-white font-sans">
 
-  <main>
-    <section class="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden pt-20 bg-[#111814]">
-      <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#111814]"></div>
+<div id="header-placeholder"></div>
 
-      <div class="relative z-10 max-w-4xl mx-auto px-6 scroll-fade-in">
-        <h1 class="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
-          Support <span class="text-emerald-400">Taskly</span>
-        </h1>
-        <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-12">
-          Your support keeps Taskly running, helps us improve, and allows us to add new tools for the community.
+<main class="pt-24 pb-16 px-6">
+    <section class="text-center mb-16">
+        <h1 class="text-5xl md:text-6xl font-black mb-4">Support the Future of Taskhub</h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto">
+            Your contribution powers our innovation and keeps our tools free for everyone. Join us on our mission!
         </p>
-
-        <div class="grid md:grid-cols-3 gap-10">
-          <a href="https://github.com/Aezi51/Taskly" target="_blank"
-             class="group relative flex flex-col items-center justify-center p-8 bg-[#1A221D] border border-slate-800 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300 overflow-hidden">
-            <div class="mb-4 inline-block bg-emerald-900/50 p-5 rounded-full">
-              <i data-lucide="github" class="w-12 h-12 text-emerald-400"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-white mb-2">GitHub Sponsors</h3>
-            <p class="text-slate-400 text-sm">Support the project directly on GitHub and help Taskly grow.</p>
-          </a>
-
-          <a href="https://www.paypal.com/paypalme/ankitsunar8889" target="_blank"
-             class="group relative flex flex-col items-center justify-center p-8 bg-[#1A221D] border border-slate-800 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300 overflow-hidden">
-            <div class="mb-4 inline-block bg-blue-900/50 p-5 rounded-full">
-              <i data-lucide="paypal" class="w-12 h-12 text-emerald-400"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-white mb-2">PayPal</h3>
-            <p class="text-slate-400 text-sm">Make a one-time donation via PayPal to support Taskly.</p>
-          </a>
-
-          <a href="https://buymeacoffee.com/b2dankit" target="_blank"
-             class="group relative flex flex-col items-center justify-center p-8 bg-[#1A221D] border border-slate-800 rounded-2xl shadow-xl text-white hover:scale-105 transition-transform duration-300 overflow-hidden">
-            <div class="mb-4 inline-block bg-yellow-900/50 p-5 rounded-full">
-              <i data-lucide="coffee" class="w-12 h-12 text-emerald-400"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-white mb-2">Buy Me a Coffee</h3>
-            <p class="text-slate-400 text-sm">Support Taskly with a small donation to keep it running and improving.</p>
-          </a>
-        </div>
-      </div>
     </section>
-  </main>
 
-  <div id="footer-placeholder"></div>
-  <script src="./js/load-components.js" defer></script>
-  <script src="./js/main.js" defer></script>
+    <section class="max-w-4xl mx-auto mb-12">
+        <h2 class="text-2xl font-bold text-center mb-2">Step 1: Choose Your Support Amount</h2>
+        <p class="text-slate-400 text-center mb-8">This amount will be used for PayPal payments. Ko-fi and Razorpay allow custom amounts on their pages.</p>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+            <button class="tier-button" data-amount="25">
+                <i data-lucide="heart" class="icon"></i>
+                <span class="font-bold text-lg">Supporter</span>
+                <span class="text-2xl font-black">$25</span>
+            </button>
+            <button class="tier-button selected" data-amount="50">
+                <span class="absolute top-0 right-0 bg-emerald-500 text-white text-xs font-bold px-2 py-1 rounded-bl-lg rounded-tr-xl">POPULAR</span>
+                <i data-lucide="star" class="icon"></i>
+                <span class="font-bold text-lg">Contributor</span>
+                <span class="text-2xl font-black">$50</span>
+            </button>
+            <button class="tier-button" data-amount="100">
+                <i data-lucide="gem" class="icon"></i>
+                <span class="font-bold text-lg">Patron</span>
+                <span class="text-2xl font-black">$100</span>
+            </button>
+            <div class="flex flex-col items-center justify-center gap-2 p-4 bg-[#1A221D] rounded-2xl border-2 border-slate-700 text-center">
+                <label for="custom-amount" class="font-bold text-lg">Custom</label>
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-slate-400 mr-1">$</span>
+                    <input type="number" id="custom-amount" value="50.00" min="1.00" step="1.00" class="w-28 bg-[#232d26] text-white text-center text-2xl font-black py-2 px-2 rounded-md border border-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-400"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-bold text-center mb-8">Step 2: Choose Your Support Method</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="flex flex-col items-center justify-between gap-4 p-6 bg-[#1A221D] rounded-2xl border border-slate-800 text-center">
+                <div class="flex flex-col items-center gap-2">
+                    <h3 class="text-xl font-bold">Support on Ko-fi</h3>
+                    <p class="text-slate-400 text-sm">Ideal for tips, memberships, and direct support for creators.</p>
+                </div>
+                <a href="https://ko-fi.com/b2dstudio" target="_blank" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition transform duration-200 flex items-center justify-center gap-2">
+                    <i data-lucide="coffee"></i>
+                    <span>Visit Ko-fi Page</span>
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center justify-between gap-4 p-6 bg-[#1A221D] rounded-2xl border-2 border-emerald-500 text-center">
+                 <div class="flex flex-col items-center gap-2">
+                    <h3 class="text-xl font-bold">Pay with PayPal</h3>
+                    <p class="text-slate-400 text-sm">Securely use your PayPal account or cards for international payments (USD).</p>
+                </div>
+                <div id="paypal-button-container" class="w-full"></div>
+            </div>
+
+            <div class="flex flex-col items-center justify-between gap-4 p-6 bg-[#1A221D] rounded-2xl border border-slate-800 text-center">
+                <div class="flex flex-col items-center gap-2">
+                    <h3 class="text-xl font-bold">Pay with Razorpay</h3>
+                    <p class="text-slate-400 text-sm">Supports UPI, Wallets, Net Banking, and Indian Cards (INR).</p>
+                </div>
+                <a href="https://razorpay.me/@ankitsunar" target="_blank" class="w-full bg-sky-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-sky-700 transition transform duration-200 flex items-center justify-center gap-2">
+                    <i data-lucide="credit-card"></i>
+                    <span>Use Razorpay</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_LIVE_CLIENT_ID&currency=USD"></script>
+
+<script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // --- Donation Tier Selection Logic ---
+    const tierButtons = document.querySelectorAll('.tier-button');
+    const customAmountInput = document.getElementById('custom-amount');
+    
+    tierButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            tierButtons.forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+            customAmountInput.value = button.dataset.amount;
+        });
+    });
+
+    customAmountInput.addEventListener('input', () => {
+        tierButtons.forEach(btn => btn.classList.remove('selected'));
+    });
+    
+    // --- PAYPAL BUTTON LOGIC (CORRECTED) ---
+    paypal.Buttons({
+        createOrder: function(data, actions) { // <-- Corrected here
+            const donationAmount = document.getElementById('custom-amount').value;
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        currency_code: "USD",
+                        value: donationAmount
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                alert('Thank you for your donation, ' + details.payer.name.given_name + '!');
+            });
+        },
+        onError: function(err) {
+            console.error('An error occurred with the PayPal payment:', err);
+            alert('An error occurred. Please check the browser console for details.');
+        }
+    }).render('#paypal-button-container');
+
+</script>
+
+<script src="./js/load-components.js" defer></script>
 </body>
 </html>
